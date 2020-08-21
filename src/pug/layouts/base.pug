@@ -59,14 +59,14 @@ html(class=html.classList)&attributes(html.attrs)
 		block head-end
 	body(class=body.classList)&attributes(body.attrs)
 		block body-start
-
-		block header
-			include header
-		block content
-		block footer 
-			include footer
-		block popup 
-			include modals
+		.main-wrap
+			block header
+				include header
+			block content
+			block footer 
+				include footer
+			block popup 
+				include modals
 
 		block scripts
 			script(src="http://code.jquery.com/jquery-3.3.1.min.js")

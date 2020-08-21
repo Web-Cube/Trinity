@@ -1,0 +1,8 @@
+.owl {
+	&-prev, &-next {
+		background: none;
+		cursor: pointer;
+		position: absolute;
+		z-index: 50;
+	}
+}

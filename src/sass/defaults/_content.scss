@@ -2,8 +2,8 @@
 .p,
 .content li,
 .li {
-	font-size: 1.6rem;
-	line-height: (19/16) * 1;
+	font-size: 15rem;
+	line-height: (20/15) * 1;
 }
 
 .content ul,
@@ -36,14 +36,20 @@
 .content h5,
 .h6,
 .content h6 {
+	font-weight: normal;
 }
 
 .h1,
 .content h1 {
+	font-size: 35rem;
+	line-height: 46/35*1;
+	font-weight: 300;
 }
 
 .h2,
 .content h2 {
+	font-size: 19rem;
+	line-height: 26/19*1;
 }
 
 .h3,

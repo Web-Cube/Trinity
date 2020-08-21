@@ -1,0 +1,113 @@
+.main-slider {
+	background: url(/img/slider__bg.jpg) center no-repeat;
+	background-size: cover;
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+	.owl-prev, .owl-next {
+		width: 10rem;
+		height: 20rem;
+		fill: none;
+		stroke: #fff;
+		stroke-width: 1.5;
+		border: 0;
+		top: 50%;
+		margin-top: -10rem;
+		&:before {
+			content: '';
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 60rem;
+			height: 60rem;
+			border: 1px solid #fff;
+			transform: translateX(-50%) translateY(-50%) scale(0.5);
+			border-radius: 100%;
+			opacity: 0;
+			transition: ease .15s;
+		}
+		&:hover {
+			&:before {
+				transform: translateX(-50%) translateY(-50%) scale(1);
+				opacity: 1;
+			}
+		}
+	}
+	.owl-prev {
+		left: 15px;
+	}
+	.owl-next {
+		right: 15px;
+	}
+	&__img {
+		height: 550rem;
+		width: 60%;
+		position: relative;
+		img {
+			width: auto!important;
+			max-width: 400rem;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translateX(-50%) translateY(-50%);
+		}
+	}
+	&__price {
+		font-size: 29rem;
+		line-height: 38/29*1;
+		font-weight: 300;
+		margin-top: 12rem;
+	}
+	&__btn {
+		margin-top: 32rem;
+	}
+	
+	@include max-screen($small_desktop) {
+		.owl-prev {
+			left: 30px;
+		}
+		.owl-next {
+			right: 30px;
+		}
+	}
+	
+	@include max-screen($small_tablet) {
+		&__img {
+			img {
+				max-width: 350rem;
+			}
+		}
+	}
+	@include max-screen($large_mobile) {
+		padding: 40px 0 50px 0;
+		&__img {
+			width: 100%;
+			height: 250px;
+			margin-bottom: 30px;
+			img {
+				position: static;
+				transform: translateX(0) translateY(0);
+				margin: auto;
+				max-width: 160px;
+				max-height: 250px;
+			}
+		}
+		&__content {
+			text-align: center;
+			width: 100%;
+		}
+		&__btn {
+			margin-top: 20px;
+		}
+		.owl-prev, .owl-next {
+			width: 12px;
+			height: 24px;
+			margin-top: 0;
+			top: 110px;
+			stroke-width: 2;
+			&:before {
+				display: none;
+			}
+		}
+	}
+}

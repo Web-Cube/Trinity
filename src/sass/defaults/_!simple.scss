@@ -6,23 +6,12 @@
 }
 
 .wrap {
-	padding: 0 32px;
-	max-width: 1400px;
+	padding: 0 15px;
+	max-width: 1200px;
+	width: 100%;
 	z-index: 15;
 	margin: auto;
 	position: relative;
-
-	@include max-screen($large_desktop) {
-		max-width: 1200px;
-	}
-
-	@include max-screen($large_tablet) {
-		padding: 0 15px;
-	}
-
-	// @include max-screen($large_mobile) {
-	// 	padding: 0 10px;
-	// }
 }
 
 html {
@@ -36,7 +25,7 @@ body {
 	font-size: 1px; // 1rem = 10px
 
 	@include max-screen($small_desktop) {
-		font-size: 100vw / (1920/1);
+		font-size: 0.9px;
 	}
 	@include max-screen($large_tablet) {
 		font-size: 0.85px;
@@ -45,10 +34,15 @@ body {
 body {
 	position: relative;
 	font-family: 'ArtegraSans';
+	color: $black;
 	&.js-lock {
 		overflow-x: hidden;
 		overflow-y: scroll;
 	}
+}
+
+.main-wrap {
+	font-size: 16rem;
 }
 
 input,

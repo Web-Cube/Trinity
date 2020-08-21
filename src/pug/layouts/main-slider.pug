@@ -1,0 +1,27 @@
++b.main-slider
+	+e.wrap.wrap
+		+e.inside.js-slider(
+				data-settings=`{
+					"smartSpeed": 500,
+					"items": 1,
+					"margin": 30,
+					"nav": true,
+					"navContainer": ".js-slider-nav"
+				}`)
+			+e.slide.flex._vertical
+				+e.img
+					img(src="/img/main__slide.jpg")
+				+e.content
+					+e.title.h1 BLANCPAIN
+					+e.desc.h2 Часы Ultraplate
+					+e.price 7 600 $
+					+btn(class='_black') ПОДРОБНЕЕ
+			+e.slide.flex._vertical
+				+e.img
+					img(src="/img/main__slide.jpg")
+				+e.content
+					+e.title.h1 BLANCPAIN
+					+e.desc.h2 Часы Ultraplate
+					+e.price 7 600 $
+					+btn(class='_black') ПОДРОБНЕЕ
+		+e.nav.js-slider-nav.owl-nav
