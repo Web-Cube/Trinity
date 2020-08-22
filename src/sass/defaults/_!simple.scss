@@ -12,6 +12,9 @@
 	z-index: 15;
 	margin: auto;
 	position: relative;
+	&_big {
+		max-width: 1396px;
+	}
 }
 
 html {

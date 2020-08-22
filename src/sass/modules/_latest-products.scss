@@ -1,0 +1,48 @@
+.latest-products {
+	margin-top: 130rem;
+	&__title {
+		margin-bottom: 50rem;
+	}
+	&__bottom {
+		margin-top: 45rem;
+	}
+	&__slider {
+		&-container {
+			position: relative;
+			padding: 0 95rem;
+		}
+	}
+	.owl {
+		&-prev, &-next {
+			bottom: 65%;
+		}
+		&-prev {
+			left: 25rem;
+		}
+		&-next {
+			right: 25rem;
+		}
+	}
+	&__progress {
+		margin-top: 60rem;
+	}
+	
+	@include max-screen($large_mobile) {
+		margin-top: 60px;
+		&__title {
+			margin-bottom: 30px;
+		}
+		&__slider {
+			&-container {
+				padding: 0 30px;
+			}
+		}
+		&__progress {
+			margin: 30px auto 0 auto;
+			max-width: 290px;
+		}
+		&__bottom {
+			margin-top: 40px;
+		}
+	}
+}
