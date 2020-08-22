@@ -1,0 +1,50 @@
+.favorite {
+	display: inline-flex;
+	width: 24rem;
+	height: 24rem;
+	position: relative;
+	&__count {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		font-size: 12rem;
+		color: #fff;
+		z-index: 3;
+	}
+	&__icon {
+		svg {
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		.icon-favorite {
+			opacity: 0;
+			transition: ease .2s;
+		}
+		.icon-heart {
+			transition: ease .2s;
+		}
+	}
+	&_black {
+		.favorite__icon {
+			fill: #454545;
+		}
+	}
+	&_red {
+		.favorite__icon {
+			fill: #F34646;
+		}
+	}
+	&.is-active, &:hover {
+		.favorite__icon {
+			.icon-favorite {
+				opacity: 1;
+			}
+		}
+	}
+}

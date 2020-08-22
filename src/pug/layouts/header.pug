@@ -1,14 +1,50 @@
 +b.HEADER.header
-	+e.wrap.wrap
-		+e.row.flex._justify._vertical
-			+e.column
-				+e.burger.burger__
-					+e.line
-					+e.line
-					+e.line
-			+e.column
-				+e.A.logo(href="#")
-					img(src="/app/img/logo.svg")
-			+e.column.flex._right
-				+e.contact
-					+e.A.phone(href="tel:8800600200333") 8 800 600 200 333
+	+e.top
+		+e.wrap.wrap
+			+e.top-row.flex._justify._vertical
+				+e.column
+					+e.burger.burger__
+						+e.line
+						+e.line
+						+e.line
+				+e.column
+					+e.A.logo(href="#")
+						img(src="/app/img/logo.svg")
+				+e.column.flex._right
+					+e.contact
+						+e.A.phone(href="tel:8800600200333") 8 800 600 200 333
+	+e.bottom
+		+e.wrap.wrap
+			+e.bottom-row.flex._justify._vertical
+				+e.left
+					+e.FORM.search-form.search-form__(action='#')
+						+e.INPUT.input(name="search", placeholder="поиск по каталогу")
+						+e.BUTTON.btn
+							+icon('search')
+				+e.center
+					+e.UL.nav
+						+e.LI.item
+							+e.A.link(href="#") украшения
+						+e.LI.item
+							+e.A.link(href="#") Швейцарские часы
+						+e.LI.item
+							+e.A.link(href="#") Аксессуары
+				+e.right.flex._vertical._right
+					+e.lang.select__._border
+						select
+							option(checked) RU
+							option ENG
+						+e.icon
+							+icon('down')
+					+e.currency.select__
+						select
+							option(checked) РУБ
+							option USD
+							option UAH
+						+e.icon
+							+icon('down')
+					+e.A.favorite.favorite__._black(href="#")
+						+e.icon
+							+icon('heart')
+							+icon('favorite')
+						// +e.count 5
