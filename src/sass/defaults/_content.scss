@@ -53,6 +53,10 @@
 	font-size: 19rem;
 	line-height: 26/19*1;
 	letter-spacing: 0.14em;
+	&_big {
+		font-size: 33rem;
+		line-height: 150%;
+	}
 }
 
 .h3,
@@ -73,4 +77,16 @@
 .title {
 	letter-spacing: 0.14em;
 	text-transform: uppercase;
+}
+.small {
+	font-size: 12rem;
+	line-height: 16rem;
+}
+
+@include max-screen($large_mobile) {
+	.h2 {
+		&_big {
+			font-size: 26rem;
+		}
+	}
 }

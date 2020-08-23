@@ -1,0 +1,108 @@
+.form {
+	&__percent {
+		line-height: 1;
+		&-from {
+			font-size: 24rem;
+		}
+		&-number {
+			font-size: 88rem;
+			font-weight: 100;
+			line-height: 0.57;
+			margin-left: 10rem;
+			sup {
+				font-size: 24rem;
+				font-weight: 300;
+				transform: translateX(7rem) translateY(-12rem);
+				display: inline-flex;
+			}
+		}
+	}
+	&__title {
+		margin-bottom: 45rem;
+	}
+	&__desc {
+		font-size: 12rem;
+		line-height: 158%;
+		margin-top: 30rem;
+	}
+	&__wrap {
+		max-width: 221rem;
+		margin: 65rem auto 0 auto;
+	}
+	&__input {
+		width: 100%;
+		border: 0;
+		border-bottom: 1px solid #000;
+		color: #000;
+		font-size: 12px;
+		line-height: 15px;
+		height: 20px;
+		padding-bottom: 6px;
+		&::placeholder {
+			color: #000;
+		}
+	}
+	&__file {
+		margin-top: 35rem;
+		position: relative;
+		&-input {
+			opacity: 0;
+			position: absolute;
+			cursor: pointer;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+		}
+		&-btn {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		&-plus {
+			width: 13rem;
+			height: 13rem;
+			margin-right: 10rem;
+		}
+		&-name {
+			padding-top: 3rem;
+		}
+	}
+	&__btn {
+		width: 100%;
+		margin-top: 35rem;
+	}
+	&__polity {
+		margin-top: 20rem;
+		a {
+			text-decoration: underline;
+		}
+	}
+	&__field {
+		&:not(:first-child) {
+			margin-top: 20px;
+		}
+		&.error {
+			.form__input {
+				border-color: red;
+				color: red;
+				&::placeholder {
+					color: red;
+				}
+			}
+		}
+	}
+	@include max-screen($large_mobile) {
+		&__wrap {
+			max-width: none;
+			width: 100%;
+			margin-top: 30px;
+		}
+		&__file {
+			margin-top: 25px;
+		}
+		&__btn {
+			margin-top: 25px;
+		}
+	}
+}

@@ -1,0 +1,66 @@
+.buying {
+	margin-top: 135rem;
+	position: relative;
+	&__bg {
+		position: absolute;
+		top: -310rem;
+		left: 50%;
+		width: 1366rem;
+		transform: translateX(-95%);
+	}
+	&__row {
+		max-width: 840rem;
+		margin: auto;
+	}
+	&__content {
+		width: 545/840*100%;
+		margin-top: 103rem;
+		&-desc {
+			margin-top: 16rem;
+			line-height: 158%;
+		}
+		&-products {
+			margin-top: 35rem;
+			font-size: 17rem;
+			line-height: 187.51%;
+			max-width: 455rem;
+		}
+		.btn {
+			margin-top: 35rem;
+			width: 220rem;
+		}
+	}
+	&__form {
+		width: 295/840*100%;
+		margin-top: 100rem;
+		.form__polity {
+			margin-right: -10rem;
+			margin-left: -10rem;
+		}
+	}
+	
+	@include max-screen($large_mobile) {
+		margin-top: 80px;
+		&__content {
+			width: 100%;
+			margin-top: 30px;
+			text-align: center;
+			br {
+				display: none;
+			}
+			.btn {
+				margin-left: auto;
+				margin-right: auto;
+				display: flex;
+			}
+		}
+		&__form {
+			width: 100%;
+			margin-top: 60px;
+			.form__polity {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+	}
+}

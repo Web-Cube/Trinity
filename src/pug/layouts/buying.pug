@@ -1,0 +1,43 @@
++b.buying
+	+e.IMG.bg(src="/img/clock__bg.jpg")
+	+e.wrap.wrap
+		+e.H2.title.title.h2._big.css-text-center Скупка часов
+		+e.row.flex
+			+e.content
+				+e.H2.content-title.h2.title Привлекательные условия
+				+e.content-desc.p Бутик швейцарских часов Trinity осуществляет выкуп часов 
+					br
+					| в городах России, Украины и Казахстана. Мы принимаем элитные поддержанные экземпляры европейских марок, выдаем 
+					br
+					| крупные суммамы наличными в наших офисах
+				+e.content-products
+					| Audemars Piguet, Breguet, Panerai, Patek Philippe, Richard Mille, Rolex, Ulysse Nardin, Vacheron Constantin, A.Lange & Sohne, Alain Silberstein, Bovet, Blancpain, Breitling, Bvlgari, Cartier, Chopard, De Grisogono, DeLaCour, Harry Winston, Zenith, Omega
+				+btn(class="_border", href="service.html") Подробнее об услуге
+			+e.FORM.form.form__(action='/app/mail')
+				// +e.H3.title.h2.title.css-text-center Заполните форму и получите
+				+e.percent.flex._center._bottom
+					// +e.percent-from до
+					+e.percent-number 80
+						sup %
+				+e.desc.css-text-center
+					| от стоимости часов можно 
+					br
+					| получить, обратившись к нам
+				+e.wrap
+					+e.fields
+						+e.field
+							+e.INPUT.input(type="text", name="name", placeholder="Имя")
+						+e.field
+							+e.INPUT.input(type="tel", name="phone", placeholder="Телефон")
+					+e.file.js-file-container
+						+e.INPUT.file-input.js-file(type="file",name="file")
+						+e.file-btn
+							+e.file-plus
+								+icon('plus')
+							+e.file-name.small.js-file-name добавить фото
+					+button(type="submit", class="_black") отправить
+					+e.polity.small.css-text-center
+						| Нажимая на кнопку, вы даете 
+						a(href="#") согласие на обработку 
+						| своих персональных данных и соглашаетесь с 
+						a(href="#") политикой конфиденциальности
