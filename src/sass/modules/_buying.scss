@@ -32,7 +32,10 @@
 	}
 	&__form {
 		width: 295/840*100%;
-		margin-top: 100rem;
+		margin-top: 60rem;
+		padding-bottom: 30rem;
+		border: 1px solid #EFEFEF;
+		padding: 65rem 0 30rem 0;
 		.form__polity {
 			margin-right: -10rem;
 			margin-left: -10rem;
@@ -57,6 +60,8 @@
 		&__form {
 			width: 100%;
 			margin-top: 60px;
+			border: 0;
+			padding: 0;
 			.form__polity {
 				margin-left: 0;
 				margin-right: 0;

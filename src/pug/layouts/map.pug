@@ -1,0 +1,53 @@
++b.map._main
+	+e.wrap.wrap
+		+e.H2.title.title.h2.css-text-center Контакты
+		+e.nav.flex._center
+			+e.A.nav-link.is-active.js-address(href="#moskov") Москва
+			+e.A.nav-link.js-address(href="#kyiv") Киев
+			+e.A.nav-link.js-address(href="#astana") Астана
+		+e.tabs
+			+e.tab.js-tab#moskov
+				+e.list.flex._center
+					+e.item
+						+e.label Городской телефон
+						+e.A.text(href="tel:+74952403333") +7 495 240 33 33
+					+e.item
+						+e.label Мессенджеры
+						+e.A.text(href="tel:+79153706397") +7 915 370 63 97
+					+e.item
+						+e.label Почта
+						+e.A.text(href="mailto:info@trinity.ru") info@trinity.ru
+				+e.adress.h2
+					+e.label.is-hidden Адресс
+					| Красная площадь, дом 1
+				+e.box.js-map#mapMoskov(data-len="55.755253", data-lng="37.617768")
+			+e.tab.js-tab#kyiv
+				+e.list.flex._center
+					+e.item
+						+e.label Городской телефон
+						+e.A.text(href="tel:+74952403333") +7 495 240 33 33
+					+e.item
+						+e.label Мессенджеры
+						+e.A.text(href="tel:+79153706397") +7 915 370 63 97
+					+e.item
+						+e.label Почта
+						+e.A.text(href="mailto:info@trinity.ru") info@trinity.ru
+				+e.adress.h2
+					+e.label.is-hidden Адресс
+					| Красная площадь, дом 1
+				+e.box.js-map#mapKyiv(data-len="50.438204", data-lng="30.540696")
+			+e.tab.js-tab#astana
+				+e.list.flex._center
+					+e.item
+						+e.label Городской телефон
+						+e.A.text(href="tel:+74952403333") +7 495 240 33 33
+					+e.item
+						+e.label Мессенджеры
+						+e.A.text(href="tel:+79153706397") +7 915 370 63 97
+					+e.item
+						+e.label Почта
+						+e.A.text(href="mailto:info@trinity.ru") info@trinity.ru
+				+e.adress.h2
+					+e.label.is-hidden Адресс
+					| Красная площадь, дом 1
+				+e.box.js-map#mapAstana(data-len="51.115721", data-lng="71.412833")
