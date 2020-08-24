@@ -1,9 +1,10 @@
 +b.HEADER.header
-	+e.top
+	+e.top.js-menu-parrent
 		+e.wrap.wrap
 			+e.top-row.flex._justify._vertical
 				+e.column
-					+e.burger.burger__
+					+e.burger.burger__.js-toggle-menu
+						+e.text МЕНЮ
 						+e.line
 						+e.line
 						+e.line
@@ -13,11 +14,54 @@
 				+e.column.flex._right
 					+e.contact
 						+e.A.phone(href="tel:8800600200333") 8 800 600 200 333
-	+e.top._clone
+		+b.menu.js-menu
+			+e.wrap.wrap
+				+e.row.flex
+					+e.column
+						+e.H2.title.title.h2 Каталог
+						+e.UL.nav
+							+e.LI.nav-item
+								+e.A.nav-link.p13(href="#") Украшения
+							+e.LI.nav-item
+								+e.A.nav-link.p13(href="#") Швейцарские часы
+							+e.LI.nav-item
+								+e.A.nav-link.p13(href="#") Аксессуары
+					+e.column
+						+e.H2.title.title.h2 Услуги
+						+e.UL.nav
+							+e.LI.nav-item
+								+e.A.nav-link.p13(href="#") Скупка часов
+							+e.LI.nav-item
+								+e.A.nav-link.p13(href="#") Ремонт часов
+							+e.LI.nav-item
+								+e.A.nav-link.p13(href="#") Trade-in часов
+							+e.LI.nav-item
+								+e.A.nav-link.p13(href="#") Кредит под залог
+					+e.column
+						+e.H2.title.title.h2 О TRINITY
+						+e.UL.nav
+							+e.LI.nav-item
+								+e.A.nav-link.p13(href="#") О компании
+							+e.LI.nav-item
+								+e.A.nav-link.p13(href="#") Новости
+					+e.column
+						+e.H2.title.title.h2 контакты
+						+e.contact
+							+e.item
+								+e.label.p13 Городской телефон
+								+e.A.text(href="tel:+74952403333") +7 495 240 33 33
+							+e.item
+								+e.label.p13 Мессенджеры
+								+e.A.text(href="tel:+79153706397") +7 915 370 63 97
+							+e.item
+								+e.label.p13 Почта
+								+e.A.text(href="mailto:info@trinity.ru") info@trinity.ru
+	+e.top._clone.js-menu-parrent
 		+e.wrap.wrap
 			+e.top-row.flex._justify._vertical
 				+e.column
-					+e.burger.burger__
+					+e.burger.burger__.js-toggle-menu
+						+e.text МЕНЮ
 						+e.line
 						+e.line
 						+e.line
@@ -27,6 +71,48 @@
 				+e.column.flex._right
 					+e.contact
 						+e.A.phone(href="tel:8800600200333") 8 800 600 200 333
+		+b.menu.js-menu
+			+e.wrap.wrap
+				+e.row.flex
+					+e.column
+						+e.H2.title.title.h2 Каталог
+						+e.UL.nav
+							+e.LI.nav-item
+								+e.A.nav-link.p13(href="#") Украшения
+							+e.LI.nav-item
+								+e.A.nav-link.p13(href="#") Швейцарские часы
+							+e.LI.nav-item
+								+e.A.nav-link.p13(href="#") Аксессуары
+					+e.column
+						+e.H2.title.title.h2 Услуги
+						+e.UL.nav
+							+e.LI.nav-item
+								+e.A.nav-link.p13(href="#") Скупка часов
+							+e.LI.nav-item
+								+e.A.nav-link.p13(href="#") Ремонт часов
+							+e.LI.nav-item
+								+e.A.nav-link.p13(href="#") Trade-in часов
+							+e.LI.nav-item
+								+e.A.nav-link.p13(href="#") Кредит под залог
+					+e.column
+						+e.H2.title.title.h2 О TRINITY
+						+e.UL.nav
+							+e.LI.nav-item
+								+e.A.nav-link.p13(href="#") О компании
+							+e.LI.nav-item
+								+e.A.nav-link.p13(href="#") Новости
+					+e.column
+						+e.H2.title.title.h2 контакты
+						+e.contact
+							+e.item
+								+e.label.p13 Городской телефон
+								+e.A.text(href="tel:+74952403333") +7 495 240 33 33
+							+e.item
+								+e.label.p13 Мессенджеры
+								+e.A.text(href="tel:+79153706397") +7 915 370 63 97
+							+e.item
+								+e.label.p13 Почта
+								+e.A.text(href="mailto:info@trinity.ru") info@trinity.ru
 	+e.bottom
 		+e.wrap.wrap
 			+e.bottom-row.flex._justify._vertical

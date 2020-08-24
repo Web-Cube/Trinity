@@ -83,10 +83,18 @@
 	line-height: 16rem;
 }
 
+.p13 {
+	font-size: 13rem;
+	line-height: 18/13*1;
+}
+
 @include max-screen($large_mobile) {
 	.h2 {
 		&_big {
 			font-size: 26rem;
 		}
+	}
+	.p13 {
+		font-size: 13px;
 	}
 }

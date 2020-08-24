@@ -90,6 +90,7 @@
 	&__box {
 		margin-top: 40rem;
 		height: 390rem;
+		overflow: hidden;
 	}
 	
 	@include max-screen($large_mobile) {

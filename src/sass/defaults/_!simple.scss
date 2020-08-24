@@ -18,7 +18,7 @@
 }
 
 html {
-	&.js-lock {
+	&.is-lock {
 		overflow: hidden;
 	}
 }
@@ -38,9 +38,8 @@ body {
 	position: relative;
 	font-family: 'ArtegraSans';
 	color: $black;
-	&.js-lock {
-		overflow-x: hidden;
-		overflow-y: scroll;
+	&.is-lock {
+		overflow: hidden;
 	}
 }
 
