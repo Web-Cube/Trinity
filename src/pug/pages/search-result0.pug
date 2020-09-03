@@ -1,0 +1,21 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Результаты поиска (0 результатов)';
+
+block content
+	include ../layouts/offer
+	+b.search-result._null
+		+e.wrap.wrap
+			+e.row.flex._justify
+				+e.column._left.flex._vertical
+					+e.column-wrap
+						+e.H1.title.title.h1 Результаты поиска
+						+e.desc.title.h2 По вашему запросу ничего не найдено.
+						+e.FORM.search-form.search-form__(action='#')
+							+e.INPUT.input(name="search", placeholder="не нашли что искали?")
+							+e.BUTTON.btn
+								+icon('search')
+						+e.A.link.green-link.h3(href="/main.html") Вернуться на главную
+				+e.column._right.flex._right
+					img(src="/img/search__img.png")

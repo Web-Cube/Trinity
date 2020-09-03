@@ -3,6 +3,7 @@
 	text-align: center;
 	max-width: 182rem;
 	margin: auto;
+	position: relative;
 	&__preview {
 		display: block;
 		position: relative;
@@ -41,5 +42,10 @@
 	}
 	&__btn {
 		margin-top: 20rem;
+	}
+	&__favorite {
+		position: absolute;
+		right: 25rem;
+		top: 20rem;
 	}
 }

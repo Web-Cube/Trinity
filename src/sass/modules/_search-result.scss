@@ -1,0 +1,76 @@
+.search-result {
+	background: linear-gradient(180deg, rgba(244, 246, 249, 0.5) 64.06%, rgba(244, 246, 249, 0) 100%);
+	padding: 45rem 0 20rem 0;
+	overflow: hidden;
+	&_null {
+		padding: 0;
+	}
+	&__column {
+		min-height: 470rem;
+		position: relative;
+		&_left {
+			width: 540/1170*100%;
+			margin-left: 124/1170*100%;
+			padding: 80rem 0;
+		}
+		&_right {
+			width: 385/1170*100%;
+			margin-right: 80/1170*100%;
+			img {
+				margin-bottom: -50rem;
+				margin-top: -50rem;
+			}
+		}
+	}
+	&__title {
+		margin-bottom: 30rem;
+	}
+	&__desc {
+		margin-bottom: 10rem;
+	}
+	&__search-form {
+		width: 170px;
+	}
+	&__link {
+		margin-top: 70rem;
+	}
+	@include max-screen($large_tablet) {
+		&__column {
+			&_left {
+				margin-left: 0;
+			}
+		}
+	}
+	
+	@include max-screen($small_tablet) {
+		&__column {
+			&_right {
+				margin-right: 0;
+				img {
+					margin: 0 -100rem 0 80rem;
+				}
+			}
+			&_left {
+				width: 60%;
+			}
+		}
+	}
+	
+	@include max-screen($large_mobile) {
+		padding-bottom: 0;
+		&__column {
+			min-height: inherit;
+			&_right {
+				img {
+					margin: 0;
+					position: absolute;
+					right: -55rem;
+					bottom: 100rem;
+				}
+			}
+		}
+		&__link {
+			margin-top: 35px;
+		}
+	}
+}

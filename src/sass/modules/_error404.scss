@@ -23,19 +23,6 @@
 		text-transform: uppercase;
 		letter-spacing: 0.08em;
 	}
-	&__link {
-		text-transform: uppercase;
-		color: #5A8779;
-		font-weight: 500;
-		display: inline-flex;
-		border-bottom: 1px solid #5A8779;
-		line-height: 1;
-		transition: ease .2s;
-		&:hover {
-			color: #000;
-			border-color: #000;
-		}
-	}
 	&__search {
 		margin-top: 15rem;
 		&-text {

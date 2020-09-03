@@ -1,0 +1,66 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Результаты поиска';
+
+block content
+	include ../layouts/offer
+	+b.search-result
+		+e.wrap.wrap
+			+e.H1.title.title.h1 Результаты поиска
+			+e.desc.title.h2 Найдено 5 товаров по запросу «patek»
+			+e.FORM.search-form.search-form__(action='#')
+				+e.INPUT.input(name="search", placeholder="не нашли что искали?")
+				+e.BUTTON.btn
+					+icon('search')
+			+e.catalog.catalog__
+				+e.list.flex
+					+e.A.item.product-preview__(href="#")
+						+e.preview
+							+e.IMG.preview-img.object-fit(src="/img/product1.png")
+						+e.info
+							+e.title PATEK PHILIPPE
+							+e.desc GRAND COMPLICATIONS 
+								br 
+								| 5101P
+							+e.price 6 200 $
+							+e.currency 431 613 ₽ · 5 473 €
+					+e.A.item.product-preview__(href="#")
+						+e.preview
+							+e.IMG.preview-img.object-fit(src="/img/product2.png")
+						+e.info
+							+e.title BREGUET
+							+e.desc Classique Complications 
+								br
+								| 3757PT 1E 9V6
+							+e.price 44 000 $
+							+e.currency 431 613 ₽ · 5 473 €
+					+e.A.item.product-preview__(href="#")
+						+e.preview
+							+e.IMG.preview-img.object-fit(src="/img/product3.png")
+						+e.info
+							+e.title HUBLOT
+							+e.desc BIG BANG 
+								br
+								| ZEBRA WHITE
+							+e.price 44 000 $
+							+e.currency 431 613 ₽ · 5 473 €
+					+e.A.item.product-preview__(href="#")
+						+e.preview
+							+e.IMG.preview-img.object-fit(src="/img/product4.png")
+						+e.info
+							+e.title AUDEMARS PIGUET
+							+e.desc Royal Oak Selfwinding
+								br
+								| 15502OR ZZ 1222OR 01
+							+e.price По запросу
+					+e.A.item.product-preview__(href="#")
+						+e.preview
+							+e.IMG.preview-img.object-fit(src="/img/product5.png")
+						+e.info
+							+e.title ROLEX
+							+e.desc Rolex Lady Datejust
+								br
+								| Yellow Gold 179178 mdp
+							+e.price 44 000 $
+							+e.currency 431 613 ₽ · 5 473 €

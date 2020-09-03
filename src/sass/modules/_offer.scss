@@ -3,6 +3,8 @@
 	background: url(/img/slider__bg.jpg) center no-repeat;
 	background-size: cover;
 	color: #fff;
+	position: relative;
+	z-index: 2;
 	&__item {
 		display: flex;
 		align-items: center;
