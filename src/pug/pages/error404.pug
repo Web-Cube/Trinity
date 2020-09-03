@@ -1,0 +1,24 @@
+extends ../layouts/base
+
+append vars
+	- title = '404 страница';
+
+block content
+	include ../layouts/offer
+	+b.error404
+		+e.wrap.wrap
+			+e.row.flex._vertical
+				+e.column._left.flex._center._vertical
+					+e.img
+						img(src="/img/error404.png")
+						+e.text
+							+e.H2.title.title.h1 УПС...
+							+e.desc.p13 Страница не найдена
+				+e.column._right
+					+e.A.link.h2(href="/main.html") Вернуться на главную
+					+e.search.flex._vertical
+						+e.search-text.h3 или воспользоваться поиском
+						+e.FORM.search-form.search-form__(action='#')
+							+e.INPUT.input(name="search", placeholder="что ищем?")
+							+e.BUTTON.btn
+								+icon('search')

@@ -1,0 +1,76 @@
+.error404 {
+	padding: 76rem 0 96rem 0;
+	background: linear-gradient(180deg, rgba(244, 246, 249, 0.5) 64.06%, rgba(244, 246, 249, 0) 100%);
+	&__column {
+		&_left {
+			width: 640/1170*100%;
+			padding-left: 27rem;
+		}
+		&_right {
+			width: (1170-640)/1170*100%;
+		}
+	}
+	&__img {
+		position: relative;
+		width: 479rem;
+	}
+	&__text {
+		position: absolute;
+		right: -30rem;
+		bottom: 0;
+	}
+	&__desc {
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+	}
+	&__link {
+		text-transform: uppercase;
+		color: #5A8779;
+		font-weight: 500;
+		display: inline-flex;
+		border-bottom: 1px solid #5A8779;
+		line-height: 1;
+		transition: ease .2s;
+		&:hover {
+			color: #000;
+			border-color: #000;
+		}
+	}
+	&__search {
+		margin-top: 15rem;
+		&-text {
+			margin-right: 20rem;
+		}
+	}
+	
+	@include max-screen($small_tablet) {
+		&__column {
+			&_left {
+				padding-left: 0;
+				padding-right: 30px;
+			}
+		}
+	}
+	@include max-screen($large_mobile) {
+		padding: 60px 0;
+		&__column {
+			&_left, &_right {
+				width: 100%;
+			}
+			&_right {
+				margin-top: 20px;
+			}
+		}
+		&__text {
+			position: static;
+			margin-top: 10px;
+		}
+		&__search {
+			&-text {
+				width: 100%;
+				margin-bottom: 10px;
+				margin-right: 0;
+			}
+		}
+	}
+}
