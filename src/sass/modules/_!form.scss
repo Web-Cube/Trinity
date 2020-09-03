@@ -38,6 +38,7 @@
 		line-height: 15px;
 		height: 20px;
 		padding-bottom: 6px;
+		background: none;
 		&::placeholder {
 			color: #000;
 		}
@@ -92,6 +93,11 @@
 			}
 		}
 	}
+	
+	&__column {
+		width: 48%;
+	}
+	
 	@include max-screen($large_mobile) {
 		&__wrap {
 			max-width: none;
@@ -103,6 +109,12 @@
 		}
 		&__btn {
 			margin-top: 25px;
+		}
+		&__column {
+			width: 100%;
+			&:not(:last-child) {
+				margin-bottom: 20px;
+			}
 		}
 	}
 }

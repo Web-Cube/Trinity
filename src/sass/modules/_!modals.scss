@@ -1,0 +1,160 @@
+.mfp-container{
+	padding: 0 15px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.mfp-bg{
+	background-color: rgba(0, 0, 0, 0.302);
+	opacity: 1;
+}
+.mfp-counter{
+	display: none;
+}
+
+.mfp-image-holder {
+	background-color: rgba(0, 0, 0, 0.702);
+}
+
+.mfp-content{
+	@extend .clear;
+}
+
+.modals{
+	&_buy {
+		max-width: 665rem;
+		padding: 51rem 66rem;
+		margin: auto;
+		background: #FBFBFB;
+	}
+	&__close {
+		width: 24rem;
+		height: 24rem;
+		fill: #454545;
+		position: absolute;
+		right: 30rem;
+		top: 30rem;
+		cursor: pointer;
+	}
+	.form__title {
+		margin-bottom: 30rem;
+	}
+	
+	@include max-screen($large_mobile) {
+		&_buy {
+			padding-left: 40px 20px;
+		}
+	}
+}
+
+.buy {
+	&__cart {
+		width: 250/533*100%;
+		padding: 30rem;
+		background: #fff;
+		text-align: center;
+		&-preview {
+			margin-bottom: 19rem;
+			img {
+				max-height: 154rem;
+			}
+		}
+		&-desc {
+			font-size: 11rem;
+			line-height: 15/11*1;
+			margin-top: 10rem;
+		}
+	}
+	&__price {
+		&-list {
+			margin-top: 17rem;
+		}
+		&_new {
+			font-size: 29rem;
+			line-height: 38/29*1;
+			margin-right: 15rem;
+			font-weight: 300;
+		}
+		&_old {
+			font-size: 12rem;
+			line-height: 16/12*1;
+			color: rgba(27, 28, 30, 0.6);
+			text-align: left;
+		}
+	}
+	&__form {
+		width: 225/533*100%;
+	}
+	
+	@include max-screen($large_mobile) {
+		&__cart {
+			padding: 0;
+			background: none;
+		}
+		&__cart, &__form {
+			width: 100%;
+		}
+		&__form {
+			margin-top: 30px;
+			text-align: center;
+		}
+	}
+}
+
+.css-modal-animate{
+	// start state
+
+	overflow: hidden;
+
+	.modals__arrow{
+		opacity: 0;
+	}
+
+	.modals, .mfp-figure{
+		transition: all .5s ease;
+		opacity: 0;
+
+		&_right{
+
+			transform: translate(25rem, 0);
+		}
+
+		&_center{
+			transform: translate(0rem, 25rem);
+		}
+	}
+
+	// animate in
+	&.mfp-ready{
+		.modals__arrow{
+			opacity: 1;
+		}
+		.modals, .mfp-figure{
+			transform: translate(0, 0);
+			opacity: 1;
+		}
+	}
+
+	// animate out
+	&.mfp-removing{
+		.modals__arrow{
+			opacity: 0;
+		}
+		.modals, .mfp-figure{
+			opacity: 0;
+
+			&_right{
+				transform: translate(25rem, 0);
+			}
+
+			&_center{
+				transform: translate(0rem, 25rem);
+			}
+		}
+	}
+
+	@include max-screen($small_tablet) {
+		.modals, .mfp-figure{
+			transform: translate(0, 0)!important;
+		}
+	}
+}

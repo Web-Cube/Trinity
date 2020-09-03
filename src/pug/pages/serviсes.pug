@@ -1,0 +1,45 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Услуги';
+
+block content
+	include ../layouts/offer
+	+e.UL.breadcrumbs.wrap.breadcrumbs__.flex
+		+e.LI.item
+			+e.A.link(href="#") Главная
+		+e.LI.item Услуги
+	+b.services
+		+e.wrap.wrap
+			+e.H1.title.h1 услуги
+			+e.list.flex._justify
+				+e.A.item(href="/service.html")
+					+e.preview
+						+e.IMG.preview-img.object-fit(src='/img/service1.jpg')
+					+e.item-title Скупка часов
+					+e.desc.small
+						| Доверить ремонт элитных часов можно только квалифицированному мастеру, у которого есть опыт работы с новейшим оборудованием. Как правило, хороший мастер специализируется на ремонте хронографов конкретной категории. 
+					+button(class="_black") заказать
+				+e.A.item(href="/about.html")
+					+e.preview
+						+e.IMG.preview-img.object-fit(src='/img/service2.jpg')
+					+e.item-title Ремонт часов
+					+e.desc.small
+						| Доверить ремонт элитных часов можно только квалифицированному мастеру, у которого есть опыт работы с новейшим оборудованием. Как правило, хороший мастер специализируется на ремонте хронографов конкретной категории. 
+					+button(class="_black") заказать
+				+e.A.item(href="/about.html")
+					+e.preview
+						+e.IMG.preview-img.object-fit(src='/img/service3.jpg')
+					+e.item-title TRADE-IN часов
+					+e.desc.small
+						| Доверить ремонт элитных часов можно только квалифицированному мастеру, у которого есть опыт работы с новейшим оборудованием. Как правило, хороший мастер специализируется на ремонте хронографов конкретной категории. 
+					+button(class="_black") заказать
+				+e.A.item(href="/service.html")
+					+e.preview
+						+e.IMG.preview-img.object-fit(src='/img/service4.jpg')
+					+e.item-title Кредитование
+						br
+						| под залог часов
+					+e.desc.small
+						| Доверить ремонт элитных часов можно только квалифицированному мастеру, у которого есть опыт работы с новейшим оборудованием. Как правило, хороший мастер специализируется на ремонте хронографов конкретной категории. 
+					+button(class="_black") заказать

@@ -1,1 +1,31 @@
-+b.modals._recall.mfp-hide#recall
++b.modals._buy.mfp-hide#buy
+	+b.buy
+		+e.row.flex._justify._vertical
+			+e.cart
+				+e.cart-preview
+					img(src="/img/buy__img.png")
+				+e.cart-title.h3
+					| HUBLOT
+				+e.cart-desc
+					| Часы Hublot BIG BANG AERO
+					br
+					| GARMISCH LIMITED EDITION
+				+e.price-list.flex._vertical._center
+					+e.price._new 9 500 $
+					+e.price._old
+						| 656 659 ₽
+						br
+						| 8 363 €
+			+e.FORM.form.form__(action='/app/mail')
+				+e.H3.title.h2.title Заявка на товар
+				+e.fields
+					+e.field
+						+e.INPUT.input(type="text", name="name", placeholder="Имя")
+					+e.field
+						+e.INPUT.input(type="tel", name="phone", placeholder="Телефон")
+				+button(type="submit", class="_black") отправить
+				+e.polity.small
+					| Нажимая на кнопку, вы даете 
+					a(href="#") согласие на обработку 
+					| своих персональных данных и соглашаетесь с 
+					a(href="#") политикой конфиденциальности

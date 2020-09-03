@@ -1,0 +1,61 @@
+extends ../layouts/base
+
+append vars
+	- title = 'trade-in часов';
+
+block content
+	include ../layouts/offer
+	+e.UL.breadcrumbs.wrap.breadcrumbs__.flex
+		+e.LI.item
+			+e.A.link(href="#") Главная
+		+e.LI.item Услуги
+	+b.service
+		+e.wrap.wrap
+			+e.H1.title.h1 trade-in часов
+			+e.content.content
+				p
+					| Популярная во многих сферах торговли услуга «Trade-in» актуальна и для московского часового центра Trinity. Суть этой услуги заключается в том, что мы меняем Ваш старый хронограф на новый с доплатой. При этом мы оцениваем Ваши часы дорого, по достоинству, а на новые часы предлагаем приемлемую цену (ниже, чем на новые часы в салоне). В нашем ломбарде совершаются уникальные, выгодные для обеих сторон сделки. Мы практикуем индивидуальный подход и внимательное отношение к каждому клиенту. Мы выслушаем все Ваши пожелания и поможем подобрать для Вас лучшую модель по отличной цене.
+				h2 Привлекательные условия
+				p
+					| Бутик швейцарских часов Trinity осуществляет выкуп часов 
+					br
+					| в городах России, Украины и Казахстана. Мы принимаем элитные поддержанные экземпляры европейских марок, выдаем 
+					br
+					| крупные суммамы наличными в наших офисах
+				h3
+					| Audemars Piguet, Breguet, Panerai, Patek Philippe, Richard Mille, Rolex, Ulysse Nardin, Vacheron Constantin, A.Lange & Sohne, Alain Silberstein, Bovet, Blancpain, Breitling, Bvlgari, Cartier, Chopard, De Grisogono, DeLaCour, Harry Winston, Zenith, Omega
+			+e.phone
+				+e.phone-text.p13 Все подробности по телефону
+				+e.A.phone-number(href="tel:+74952403333") +7 495 240 33 33
+		+e.form-container
+			+e.wrap.wrap
+				+e.FORM.form.form__(action='/app/mail')
+					+e.H3.title.h2.title.css-text-center Заполните форму и получите
+					+e.percent.flex._center._bottom
+						+e.percent-from до
+						+e.percent-number 80
+							sup %
+					+e.desc.css-text-center
+						| от стоимости часов можно 
+						br
+						| получить, обратившись к нам
+					+e.wrap
+						+e.fields.flex._justify
+							+e.column
+								+e.field
+									+e.INPUT.input(type="text", name="name", placeholder="Имя")
+							+e.column
+								+e.field
+									+e.INPUT.input(type="tel", name="phone", placeholder="Телефон")
+						+e.file.js-file-container
+							+e.INPUT.file-input.js-file(type="file",name="file")
+							+e.file-btn
+								+e.file-plus
+									+icon('plus')
+								+e.file-name.small.js-file-name добавить фото
+						+button(type="submit", class="_black") отправить
+						+e.polity.small.css-text-center
+							| Нажимая на кнопку, вы даете 
+							a(href="#") согласие на обработку 
+							| своих персональных данных и соглашаетесь с 
+							a(href="#") политикой конфиденциальности

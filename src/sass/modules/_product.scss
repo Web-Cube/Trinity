@@ -1,6 +1,8 @@
 .product {
-	padding-top: 60rem;
+	padding-top: 110rem;
 	overflow: hidden;
+	background: linear-gradient(180deg, rgba(244, 246, 249, 0.5) 64.06%, rgba(244, 246, 249, 0) 100%);
+	margin-top: -50rem;
 	&__row {
 		position: relative;
 	}
@@ -13,7 +15,6 @@
 	}
 	&__gallery {
 		width: 625/1170*100%;
-		background: #fff;
 		display: flex;
 		align-items: center;
 		&-vertical {
@@ -255,7 +256,7 @@
 	}
 	
 	@include max-screen($large_mobile) {
-		padding-top: 0;
+		padding-top: 50rem;
 		&__gallery {
 			width: calc( 100% + 10px );
 			flex-wrap: wrap;
