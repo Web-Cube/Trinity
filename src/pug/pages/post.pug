@@ -1,0 +1,44 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Карточка новости';
+
+block content
+	include ../layouts/offer
+	+e.UL.breadcrumbs.wrap.breadcrumbs__.flex
+		+e.LI.item
+			+e.A.link(href="#") Главная
+		+e.LI.item
+			+e.A.link(href="#") Новости
+		+e.LI.item
+	+b.post
+		+e.wrap.wrap
+			+e.H1.title.title.h1 название новости
+			+e.preview
+				img(src="/img/post__img.jpg")
+			+e.date 16 июня 2020 года
+			+e.content.content
+				p
+					| Добыча нефти в Венесуэле, которая является лидером по запасам сырья, упала до 75-летнего минимума, а санкции США продолжают наносить ущерб экспорту страны. Об этом пишет Bloomberg.
+				p
+					| Государственная нефтяная компания страны Petroleos de Venezuela SA (PDVSA) снизила свои оценки добычи до 374 тысяч баррелей в день, то есть до уровня 1945 года. Снижение является результатом санкций США, которые напугали большинство мировых покупателей венесуэльской нефти. Из-за этого союзник России столкнулся с переполнением хранилищ и закрытием месторождений по всей стране.
+				p
+					| Экспорт сырой нефти из Венесуэлы упал в мае до рекордно низких показателей с 1947 года, пишет ТАСС. В ежемесячном исчислении он рухнул на 56 процентов, в годовом — на 66 процентов, что привело к разрушению нефтяного рынка страны
+				p
+					| Выкуп осуществляется оперативно и просто:
+				ol
+					li Связь с нашим специалистом;
+					li Оценка часов (удалённо или при личной встрече в офисе на территории Москвы);
+					li Заключение сделки (конфиденциально).
+			+e.bottom
+				+e.H2.bottom-title.title.h2 Привлекательные условия на бренды, которые покорили мир
+				+e.bottom-list.flex
+					+e.A.bottom-link(href="#") Rolex
+					+e.A.bottom-link(href="#") Ulysse Nardin
+					+e.A.bottom-link(href="#") Bovet
+					+e.A.bottom-link(href="#") Jaeger
+					+e.A.bottom-link(href="#") LeCoultre
+					+e.A.bottom-link(href="#") Panerai
+					+e.A.bottom-link(href="#") Franck Muller
+					+e.A.bottom-link(href="#") Harry Winston
+					+e.A.bottom-link(href="#") Другие часы.

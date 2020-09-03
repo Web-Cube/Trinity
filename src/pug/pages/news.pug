@@ -1,0 +1,61 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Новости';
+
+block content
+	include ../layouts/offer
+	+e.UL.breadcrumbs.wrap.breadcrumbs__.flex
+		+e.LI.item
+			+e.A.link(href="#") Главная
+		+e.LI.item Новости
+	+b.news
+		+e.wrap.wrap
+			+e.H1.title.title.h1 новости
+			+e.list.flex
+				+e.A.item(href="/post.html")
+					+e.preview
+						img.object-fit(src='/img/post__preview1.jpg')
+					+e.info
+						+e.date 16 июня 2020 года
+						+e.H2.info-title.title.h2 В связи с вирусом у нас нереальные скидки
+						+e.desc
+							| Доверить ремонт элитных часов можно только квалифицированному мастеру, у которого есть опыт работы с новейшим оборудованием. Как правило, хороший мастер специализируется на ремонте хронографов конкретной категории. 
+						+button(class="_black") ПОДРОБНЕЕ
+				+e.A.item(href="/post.html")
+					+e.preview
+						img.object-fit(src='/img/post__preview2.jpg')
+					+e.info
+						+e.date 16 июня 2020 года
+						+e.H2.info-title.title.h2 В связи с вирусом у нас нереальные скидки
+						+e.desc
+							| Доверить ремонт элитных часов можно только квалифицированному мастеру, у которого есть опыт работы с новейшим оборудованием. Как правило, хороший мастер специализируется на ремонте хронографов конкретной категории. 
+						+button(class="_black") ПОДРОБНЕЕ
+				+e.A.item(href="/post.html")
+					+e.preview
+						img.object-fit(src='/img/post__preview3.jpg')
+					+e.info
+						+e.date 16 июня 2020 года
+						+e.H2.info-title.title.h2 В связи с вирусом у нас нереальные скидки
+						+e.desc
+							| Доверить ремонт элитных часов можно только квалифицированному мастеру, у которого есть опыт работы с новейшим оборудованием. Как правило, хороший мастер специализируется на ремонте хронографов конкретной категории. 
+						+button(class="_black") ПОДРОБНЕЕ
+				+e.A.item(href="/post.html")
+					+e.preview
+						img.object-fit(src='/img/post__preview4.jpg')
+					+e.info
+						+e.date 16 июня 2020 года
+						+e.H2.info-title.title.h2 Надевайте пожалуйста маски не стесняйтесь
+						+e.desc
+							| Доверить ремонт элитных часов можно только квалифицированному мастеру, у которого есть опыт работы с новейшим оборудованием. Как правило, хороший мастер специализируется на ремонте хронографов конкретной категории. 
+						+button(class="_black") ПОДРОБНЕЕ
+				+e.A.item(href="/post.html")
+					+e.preview
+						img.object-fit(src='/img/post__preview5.jpg')
+					+e.info
+						+e.date 16 июня 2020 года
+						+e.H2.info-title.title.h2 вы можете оплатить часы и ювелирку  онлайн
+						+e.desc
+							| Доверить ремонт элитных часов можно только квалифицированному мастеру, у которого есть опыт работы с новейшим оборудованием. Как правило... 
+						+button(class="_black") ПОДРОБНЕЕ
+			

@@ -81,7 +81,7 @@ var modals = {
 				closeMarkup: '<div class="modals__close close js-close-modal"><svg class="icon icon-close" viewBox="0 0 17 17"><use xlink:href="/app/icons/sprite.svg#close"></use></svg></div>',
 				mainClass: 'css-modal-animate',				
 				items: {
-					src: '#buy',
+					src: '#brands',
 					type: 'inline'
 				},
 				callbacks: {
