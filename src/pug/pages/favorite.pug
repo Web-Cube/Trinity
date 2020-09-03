@@ -1,0 +1,61 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Избранное';
+
+block content
+	include ../layouts/offer
+	+b.favorites
+		+e.wrap.wrap
+			+e.head
+				+e.A.favorite.favorite__._red.is-active(href="#")
+					+e.icon
+						+icon('heart')
+						+icon('favorite')
+						+e.count 5
+				+e.H1.title.title.h1 Избранное
+			+e.list.flex
+				+e.item.product-preview__
+					+e.preview
+						+e.IMG.preview-img.object-fit(src="/img/product2.png")
+					+e.info
+						+e.title BREGUET
+						+e.desc Classique Complications 
+							br
+							| 3757PT 1E 9V6
+						+e.price 44 000 $
+						+e.currency 431 613 ₽ · 5 473 €
+						+btn(class="_black js-modal" href="#buy") КУПИТЬ
+				+e.item.product-preview__
+					+e.preview
+						+e.IMG.preview-img.object-fit(src="/img/product1.png")
+					+e.info
+						+e.title PATEK PHILIPPE
+						+e.desc GRAND COMPLICATIONS 
+							br 
+							| 5101P
+						+e.price 6 200 $
+						+e.currency 431 613 ₽ · 5 473 €
+						+btn(class="_black js-modal" href="#buy") КУПИТЬ
+				+e.item.product-preview__
+					+e.preview
+						+e.IMG.preview-img.object-fit(src="/img/product3.png")
+					+e.info
+						+e.title HUBLOT
+						+e.desc BIG BANG 
+							br
+							| ZEBRA WHITE
+						+e.price 44 000 $
+						+e.currency 431 613 ₽ · 5 473 €
+						+btn(class="_black js-modal" href="#buy") КУПИТЬ
+				+e.item.product-preview__
+					+e.preview
+						+e.IMG.preview-img.object-fit(src="/img/product4.png")
+					+e.info
+						+e.title AUDEMARS PIGUET
+						+e.desc Royal Oak Selfwinding
+							br
+							| 15502OR ZZ 1222OR 01
+						+e.price 6 200 $
+						+e.currency 431 613 ₽ · 5 473 €
+						+btn(class="_black js-modal" href="#buy") КУПИТЬ
