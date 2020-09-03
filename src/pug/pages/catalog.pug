@@ -1,0 +1,391 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Каталог';
+
+block content
+	include ../layouts/offer
+	+e.UL.breadcrumbs.wrap.breadcrumbs__.flex
+		+e.LI.item
+			+e.A.link(href="#") Главная
+		+e.LI.item
+			+e.A.link(href="#") Услуги
+		+e.LI.item Trade-In часов
+	+b.catalog
+		+e.wrap.wrap
+			+e.row.flex._justify
+				+e.column._left
+					+e.filer.filter__
+						+e.item
+							+e.head
+								+e.H3.title КОМУ
+								+e.arrow
+									+icon('arrow')
+							+e.list
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Женские")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Женские
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Мужские")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Мужские
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Унисекс")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Унисекс
+						+e.item
+							+e.head
+								+e.H3.title СОСТОЯНИЕ
+								+e.arrow
+									+icon('arrow')
+							+e.list
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Новые часы")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Новые часы
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Часы по Trade-in")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Часы по Trade-in
+						+e.item
+							+e.head
+								+e.H3.title Спецпредложения
+								+e.arrow
+									+icon('arrow')
+							+e.list
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Grand комплектация")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Grand комплектация
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Limited Edition")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Limited Edition
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Special Edition")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Special Edition
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Акция")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Акция
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Новинка")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Новинка
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Тюнинг")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Тюнинг
+						+e.item
+							+e.head
+								+e.H3.title БРЕНД
+								+e.arrow
+									+icon('arrow')
+							+e.list
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Grand комплектация")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Grand комплектация
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Limited Edition")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Limited Edition
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Special Edition")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Special Edition
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Акция")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Акция
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Новинка")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Новинка
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Тюнинг")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Тюнинг
+						+e.item
+							+e.head
+								+e.H3.title Поступления
+								+e.arrow
+									+icon('arrow')
+							+e.list
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="На заказ")
+									+e.icon
+										+icon('check')
+									+e.text.p13 На заказ
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Новые поступления")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Новые поступления
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Ожидается поступление")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Ожидается поступление
+						+e.item
+							+e.head
+								+e.H3.title стоимость
+								+e.arrow
+									+icon('arrow')
+							+e.list
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="до 5 000 $")
+									+e.icon
+										+icon('check')
+									+e.text.p13 до 5 000 $
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="до 10 000 $")
+									+e.icon
+										+icon('check')
+									+e.text.p13 до 10 000 $
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="до 50 000 $")
+									+e.icon
+										+icon('check')
+									+e.text.p13 до 50 000 $
+						+e.item
+							+e.head
+								+e.H3.title ТИП
+								+e.arrow
+									+icon('arrow')
+							+e.list
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Grand комплектация")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Grand комплектация
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Limited Edition")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Limited Edition
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Special Edition")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Special Edition
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Акция")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Акция
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Новинка")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Новинка
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Тюнинг")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Тюнинг
+						+e.item
+							+e.head
+								+e.H3.title Форма корпуса
+								+e.arrow
+									+icon('arrow')
+							+e.list
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Grand комплектация")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Grand комплектация
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Limited Edition")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Limited Edition
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Special Edition")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Special Edition
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Акция")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Акция
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Новинка")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Новинка
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Тюнинг")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Тюнинг
+						+e.item
+							+e.head
+								+e.H3.title Материал корпуса
+								+e.arrow
+									+icon('arrow')
+							+e.list
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Золото")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Золото
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Платина")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Платина
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Сталь")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Сталь
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Остальное")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Остальное
+				+e.column._right
+					+e.H1.title.h1 Швейцарские часы
+					+e.sort.sort__
+						+e.icon
+							+icon('list')
+						+e.text Сортировать
+						select
+							option(checked) По цене
+							option По рейтингу
+							option По популярности
+						+e.arrow
+							+icon('arrow')
+					+e.list.flex
+						+e.A.item.product-preview__(href="#")
+							+e.preview
+								+e.IMG.preview-img.object-fit(src="/img/product1.png")
+							+e.info
+								+e.title PATEK PHILIPPE
+								+e.desc GRAND COMPLICATIONS 
+									br 
+									| 5101P
+								+e.price 6 200 $
+								+e.currency 431 613 ₽ · 5 473 €
+						+e.A.item.product-preview__(href="#")
+							+e.preview
+								+e.IMG.preview-img.object-fit(src="/img/product2.png")
+							+e.info
+								+e.title BREGUET
+								+e.desc Classique Complications 
+									br
+									| 3757PT 1E 9V6
+								+e.price 44 000 $
+								+e.currency 431 613 ₽ · 5 473 €
+						+e.A.item.product-preview__(href="#")
+							+e.preview
+								+e.IMG.preview-img.object-fit(src="/img/product3.png")
+							+e.info
+								+e.title HUBLOT
+								+e.desc BIG BANG 
+									br
+									| ZEBRA WHITE
+								+e.price 44 000 $
+								+e.currency 431 613 ₽ · 5 473 €
+						+e.A.item.product-preview__(href="#")
+							+e.preview
+								+e.IMG.preview-img.object-fit(src="/img/product4.png")
+							+e.info
+								+e.title AUDEMARS PIGUET
+								+e.desc Royal Oak Selfwinding
+									br
+									| 15502OR ZZ 1222OR 01
+								+e.price По запросу
+						+e.A.item.product-preview__(href="#")
+							+e.preview
+								+e.IMG.preview-img.object-fit(src="/img/product5.png")
+							+e.info
+								+e.title ROLEX
+								+e.desc Rolex Lady Datejust
+									br
+									| Yellow Gold 179178 mdp
+								+e.price 44 000 $
+								+e.currency 431 613 ₽ · 5 473 €
+						+e.A.item.product-preview__(href="#")
+							+e.preview
+								+e.IMG.preview-img.object-fit(src="/img/product1.png")
+							+e.info
+								+e.title PATEK PHILIPPE
+								+e.desc GRAND COMPLICATIONS 
+									br 
+									| 5101P
+								+e.price 6 200 $
+								+e.currency 431 613 ₽ · 5 473 €
+						+e.A.item.product-preview__(href="#")
+							+e.preview
+								+e.IMG.preview-img.object-fit(src="/img/product2.png")
+							+e.info
+								+e.title BREGUET
+								+e.desc Classique Complications 
+									br
+									| 3757PT 1E 9V6
+								+e.price 44 000 $
+								+e.currency 431 613 ₽ · 5 473 €
+						+e.A.item.product-preview__(href="#")
+							+e.preview
+								+e.IMG.preview-img.object-fit(src="/img/product3.png")
+							+e.info
+								+e.title HUBLOT
+								+e.desc BIG BANG 
+									br
+									| ZEBRA WHITE
+								+e.price 44 000 $
+								+e.currency 431 613 ₽ · 5 473 €
+						+e.A.item.product-preview__(href="#")
+							+e.preview
+								+e.IMG.preview-img.object-fit(src="/img/product4.png")
+							+e.info
+								+e.title AUDEMARS PIGUET
+								+e.desc Royal Oak Selfwinding
+									br
+									| 15502OR ZZ 1222OR 01
+								+e.price По запросу
+						+e.A.item.product-preview__(href="#")
+							+e.preview
+								+e.IMG.preview-img.object-fit(src="/img/product5.png")
+							+e.info
+								+e.title ROLEX
+								+e.desc Rolex Lady Datejust
+									br
+									| Yellow Gold 179178 mdp
+								+e.price 44 000 $
+								+e.currency 431 613 ₽ · 5 473 €
+					+e.pagin.pagin__
+						+e.A.prev(href="#")
+							+icon('arrow')
+						+e.A.link._current(href="#") 1
+						+e.A.link(href="#") 2
+						+e.A.link(href="#") 3
+						+e.A.link(href="#") 4
+						+e.A.link(href="#") 5
+						+e.A.link(href="#") ...
+						+e.A.link(href="#") 15
+						+e.A.link(href="#") 16
+						+e.A.next(href="#")
+							+icon('arrow')

@@ -1,0 +1,36 @@
+.offer {
+	padding: 20rem 0;
+	background: url(/img/slider__bg.jpg) center no-repeat;
+	background-size: cover;
+	color: #fff;
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 28%;
+		padding: 5rem 0;
+		&:first-child, &:last-child {
+			width: 22%;
+		}
+		&:not(:first-child) {
+			border-left: 1px solid rgba(#fff, .2);
+		}
+	}
+	&__icon {
+		fill: #fff;
+		width: 24rem;
+		height: 24rem;
+		margin-right: 30rem;
+	}
+	
+	@include max-screen($large_mobile) {
+		&__item {
+			width: 100%!important;
+			justify-content: flex-start;
+			&:not(:first-child) {
+				border-left: 0;
+				margin-top: 10rem;
+			}
+		}
+	}
+}

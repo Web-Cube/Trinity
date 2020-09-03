@@ -1,0 +1,25 @@
+.breadcrumbs {
+	list-style: none;
+	font-size: 12rem;
+	line-height: 16/12*1;
+	font-weight: 500;
+	margin-top: 35rem;
+	&__item {
+		display: flex;
+		align-items: center;
+		&:not(:last-child) {
+			&:after {
+				content: '/';
+				margin-left: 5rem;
+				margin-right: 5rem;
+				color: #454545;
+			}
+		}
+	}
+	&__link {
+		color: rgba(#454545, .7);
+		&:hover {
+			color: #454545;
+		}
+	}
+}

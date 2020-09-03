@@ -10,6 +10,25 @@ var defaults = {
 			
 		});
 		
+		$('.js-more').click(function(){
+			$('.js-more-content p').not(".js-more-content p:first-child").slideToggle(300);
+			return false;
+		});
+		
+		$(document).on('click', '.js-info', function(){
+			
+			var position = $(this).attr('href');
+
+			$('.js-info.is-active').removeClass('is-active');
+			$(this).addClass('is-active');
+
+			$('.js-tab-content:visible').hide();
+			$('.js-tab-content'+position).fadeIn(500);
+
+			return false;
+			
+		});
+		
 	},
 	
 

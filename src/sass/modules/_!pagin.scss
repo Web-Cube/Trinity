@@ -1,0 +1,55 @@
+.pagin {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__prev, &__next {
+		width: 8px;
+		height: 4px;
+		fill: #B7B7B7;
+		transition: ease .2s;
+		&:hover {
+			fill: #000;
+		}
+	}
+	&__prev {
+		transform: rotate(90deg);
+		margin-right: 20rem;
+	}
+	&__next {
+		transform: rotate(-90deg);
+	}
+	&__link {
+		min-width: 31rem;
+		height: 31rem;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 2rem 5rem 0 5rem;
+		color: rgba(51, 51, 51, 0.35);
+		font-size: 20rem;
+		margin-right: 20rem;
+		font-weight: 500;
+		transition: ease .2s;
+		&_current {
+			color: #fff;
+			background: #1B1C1E;
+		}
+		&:hover {
+			color: #1B1C1E;
+		}
+	}
+	
+	@include max-screen($small_tablet) {
+		&__link, &__prev {
+			margin-right: 15rem;
+		}
+	}
+	@include max-screen($large_mobile) {
+		&__link {
+			margin-right: 0;
+		}
+		&__next {
+			margin-left: 15rem;
+		}
+	}
+}

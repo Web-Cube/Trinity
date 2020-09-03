@@ -17,11 +17,11 @@ var thumbnails = {
 		thumbnails.items.each((i, el) => {
 
 			let $box = $('.js-product-thumbnails'),
-				$nav = [$(el).find('.js-up'), $(el).find('.js-down')];
+				$nav = [$('.js-up'), $('.js-down')];
 			
 			let position = 0;
 			
-			if ( $(window).innerWidth() < 830 ) {
+			if ( $(window).innerWidth() < 581 ) {
 				position = 1;
 			}
 
@@ -35,7 +35,7 @@ var thumbnails = {
 				releaseSwing: 1,
 				scrollBar: false,
 				scrollBy: 1,
-				scrollHijack: 5,
+				scrollHijack: 3,
 				scrollTrap: true,
 				speed: 300,
 				elasticBounds: 1,

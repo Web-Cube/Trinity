@@ -1,0 +1,325 @@
+extends ../layouts/base
+
+append vars
+	- title = 'Карточка товара';
+
+block content
+	include ../layouts/offer
+	+e.UL.breadcrumbs.wrap.breadcrumbs__.flex
+		+e.LI.item
+			+e.A.link(href="#") Главная
+		+e.LI.item
+			+e.A.link(href="#") Услуги
+		+e.LI.item Trade-In часов
+	+b.product
+		+e.wrap.wrap
+			+e.row.flex._vertical
+				+e.row.flex._vertical._justify
+				+e.gallery.js-slider-parent
+					+e.gallery-left
+						+e.gallery-vertical.js-product-thumbnails
+							+e.UL.gallery-list
+								+e.gallery-item.active
+									img.object-fit(src="/img/main__slide.jpg")
+								+e.gallery-item
+									img.object-fit(src="/img/main__slide.jpg")
+								+e.gallery-item
+									img.object-fit(src="/img/main__slide.jpg")
+								+e.gallery-item
+									img.object-fit(src="/img/main__slide.jpg")
+								+e.gallery-item
+									img.object-fit(src="/img/main__slide.jpg")
+								+e.gallery-item
+									img.object-fit(src="/img/main__slide.jpg")
+								+e.gallery-item
+									img.object-fit(src="/img/main__slide.jpg")
+								+e.gallery-item
+									img.object-fit(src="/img/main__slide.jpg")
+						+e.up.js-up
+							+icon('arrowLeft')
+						+e.down.js-down
+							+icon('arrowRight')
+					+e.gallery-right
+						+e.gallery-horizontal.js-product-slider.js-slider(
+							data-settings=`{
+								"items": 1,
+								"margin": 20,
+								"center": false,
+								"nav": false,
+							}`)
+							+e.gallery-slide
+								img.object-fit(src="/img/main__slide.jpg")
+							+e.gallery-slide
+								img.object-fit(src="/img/main__slide.jpg")
+							+e.gallery-slide
+								img.object-fit(src="/img/main__slide.jpg")
+							+e.gallery-slide
+								img.object-fit(src="/img/main__slide.jpg")
+							+e.gallery-slide
+								img.object-fit(src="/img/main__slide.jpg")
+							+e.gallery-slide
+								img.object-fit(src="/img/main__slide.jpg")
+							+e.gallery-slide
+								img.object-fit(src="/img/main__slide.jpg")
+							+e.gallery-slide
+								img.object-fit(src="/img/main__slide.jpg")
+				+e.info
+					+e.H1.title.h1 HUBLOT
+					+e.desc.h2 Часы Hublot BIG BANG AERO GARMISCH LIMITED EDITION
+					+e.price-list.flex._vertical
+						+e.price._new 9 500 $
+						+e.price._old
+							| 656 659 ₽
+							br
+							| 8 363 €
+					+e.action.flex._vertical
+						+btn(href="#buy", class="_black js-modal") КУПИТЬ
+						+e.A.favorite.favorite__._black(href="#")
+							+e.icon
+								+icon('heart')
+								+icon('favorite')
+						+e.content.js-more-content
+							p
+								| Появившийся благодаря союзу двух сердец Дом Van Cleef & Arpels всегда воспевал прекрасные истории любви. Эта традиция находит воплощение и в часах, на циферблатах которых оживает сказка
+							p
+								| Появившийся благодаря союзу двух сердец Дом Van Cleef & Arpels всегда воспевал прекрасные истории любви. Эта традиция находит воплощение и в часах, на циферблатах которых оживает сказка
+						+e.A.more-link.more-link__.js-more(href="#")
+							+e.text ПОДРОБНЕЕ
+							+e.icon
+								+icon('arrow')
+			+e.nav.flex
+				+e.A.nav-link.is-active.js-info(href="#characteristic") Характеристики
+				+e.A.nav-link.js-info(href="#delivery") Оплата и доставка
+			+e.tabs
+				+e.tab.js-tab-content#characteristic
+					+e.tab-row.flex._justify
+						+e.tab-column
+							+e.table
+								+e.table-item
+									+e.table-text._left Тип
+									+e.table-text._right Классические
+								+e.table-item
+									+e.table-text._left Материал корпуса
+									+e.table-text._right Нержавеющая сталь,
+										br
+										| покрытие PVD
+								+e.table-item
+									+e.table-text._left Водонепроницаемость
+									+e.table-text._right 50 м
+								+e.table-item
+									+e.table-text._left Диаметр корпуса
+									+e.table-text._right 42 мм
+								+e.table-item
+									+e.table-text._left Цвет циферблата
+									+e.table-text._right Черный
+								+e.table-item
+									+e.table-text._left Тип механизма
+									+e.table-text._right Автоматический
+						+e.tab-column
+							+e.table
+								+e.table-item
+									+e.table-text._left Функции
+									+e.table-text._right Дата, часы, минуты, 
+										br
+										| секунды, запас хода
+								+e.table-item
+									+e.table-text._left Запас хода
+									+e.table-text._right 42 часа
+								+e.table-item
+									+e.table-text._left Калибр
+									+e.table-text._right CO-373
+								+e.table-item
+									+e.table-text._left Материал ремешка
+									+e.table-text._right Кожа аллигатора
+								+e.table-item
+									+e.table-text._left Комплектация
+									+e.table-text._right полный комплект,
+										br
+										| лимитированная серия 150 шт.
+								+e.table-item
+									+e.table-text._left Состояние
+									+e.table-text._right абсолютно новые
+				+e.tab.js-tab-content#delivery
+					+e.tab-row.flex._justify
+						+e.tab-column
+							+e.table
+								+e.table-item
+									+e.table-text._left Тип
+									+e.table-text._right Классические
+								+e.table-item
+									+e.table-text._left Материал корпуса
+									+e.table-text._right Нержавеющая сталь,
+										br
+										| покрытие PVD
+								+e.table-item
+									+e.table-text._left Водонепроницаемость
+									+e.table-text._right 50 м
+								+e.table-item
+									+e.table-text._left Диаметр корпуса
+									+e.table-text._right 42 мм
+								+e.table-item
+									+e.table-text._left Цвет циферблата
+									+e.table-text._right Черный
+								+e.table-item
+									+e.table-text._left Тип механизма
+									+e.table-text._right Автоматический
+						+e.tab-column
+							+e.table
+								+e.table-item
+									+e.table-text._left Функции
+									+e.table-text._right Дата, часы, минуты, 
+										br
+										| секунды, запас хода
+								+e.table-item
+									+e.table-text._left Запас хода
+									+e.table-text._right 42 часа
+								+e.table-item
+									+e.table-text._left Калибр
+									+e.table-text._right CO-373
+								+e.table-item
+									+e.table-text._left Материал ремешка
+									+e.table-text._right Кожа аллигатора
+								+e.table-item
+									+e.table-text._left Комплектация
+									+e.table-text._right полный комплект,
+										br
+										| лимитированная серия 150 шт.
+								+e.table-item
+									+e.table-text._left Состояние
+									+e.table-text._right абсолютно новые
+	+b.latest-products._page
+		+e.wrap.wrap._big
+			+e.H2.title.title.h2.css-text-center свежие поступления
+			+e.slider-container
+				+e.slider.js-slider(
+							data-settings=`{
+								"smartSpeed": 500,
+								"items": 5,
+								"margin": 66,
+								"center": false,
+								"nav": true,
+								"navContainer": ".js-product-nav",
+								"responsive": {
+									"0": {
+										"items": 1,
+										"margin": 10
+									},
+									"479": {
+										"items": 2,
+										"margin": 10
+									},
+									"580": {
+										"items": 3,
+										"margin": 20
+									},
+									"860": {
+										"items": 4,
+										"margin": 40
+									},
+									"1150": {
+										"items": 5,
+										"margin": 66
+									}
+								}
+							}`, data-progress-bar=".js-product-bar")
+					+e.A.item.product-preview__(href="#")
+						+e.preview
+							+e.IMG.preview-img.object-fit(src="/img/product1.png")
+						+e.info
+							+e.title PATEK PHILIPPE
+							+e.desc GRAND COMPLICATIONS 
+								br 
+								| 5101P
+							+e.price 6 200 $
+							+e.currency 431 613 ₽ · 5 473 €
+					+e.A.item.product-preview__(href="#")
+						+e.preview
+							+e.IMG.preview-img.object-fit(src="/img/product2.png")
+						+e.info
+							+e.title BREGUET
+							+e.desc Classique Complications 
+								br
+								| 3757PT 1E 9V6
+							+e.price 44 000 $
+							+e.currency 431 613 ₽ · 5 473 €
+					+e.A.item.product-preview__(href="#")
+						+e.preview
+							+e.IMG.preview-img.object-fit(src="/img/product3.png")
+						+e.info
+							+e.title HUBLOT
+							+e.desc BIG BANG 
+								br
+								| ZEBRA WHITE
+							+e.price 44 000 $
+							+e.currency 431 613 ₽ · 5 473 €
+					+e.A.item.product-preview__(href="#")
+						+e.preview
+							+e.IMG.preview-img.object-fit(src="/img/product4.png")
+						+e.info
+							+e.title AUDEMARS PIGUET
+							+e.desc Royal Oak Selfwinding
+								br
+								| 15502OR ZZ 1222OR 01
+							+e.price По запросу
+					+e.A.item.product-preview__(href="#")
+						+e.preview
+							+e.IMG.preview-img.object-fit(src="/img/product5.png")
+						+e.info
+							+e.title ROLEX
+							+e.desc Rolex Lady Datejust
+								br
+								| Yellow Gold 179178 mdp
+							+e.price 44 000 $
+							+e.currency 431 613 ₽ · 5 473 €
+					+e.A.item.product-preview__(href="#")
+						+e.preview
+							+e.IMG.preview-img.object-fit(src="/img/product1.png")
+						+e.info
+							+e.title PATEK PHILIPPE
+							+e.desc GRAND COMPLICATIONS 
+								br 
+								| 5101P
+							+e.price 6 200 $
+							+e.currency 431 613 ₽ · 5 473 €
+					+e.A.item.product-preview__(href="#")
+						+e.preview
+							+e.IMG.preview-img.object-fit(src="/img/product2.png")
+						+e.info
+							+e.title BREGUET
+							+e.desc Classique Complications 
+								br
+								| 3757PT 1E 9V6
+							+e.price 44 000 $
+							+e.currency 431 613 ₽ · 5 473 €
+					+e.A.item.product-preview__(href="#")
+						+e.preview
+							+e.IMG.preview-img.object-fit(src="/img/product3.png")
+						+e.info
+							+e.title HUBLOT
+							+e.desc BIG BANG 
+								br
+								| ZEBRA WHITE
+							+e.price 44 000 $
+							+e.currency 431 613 ₽ · 5 473 €
+					+e.A.item.product-preview__(href="#")
+						+e.preview
+							+e.IMG.preview-img.object-fit(src="/img/product4.png")
+						+e.info
+							+e.title AUDEMARS PIGUET
+							+e.desc Royal Oak Selfwinding
+								br
+								| 15502OR ZZ 1222OR 01
+							+e.price По запросу
+					+e.A.item.product-preview__(href="#")
+						+e.preview
+							+e.IMG.preview-img.object-fit(src="/img/product5.png")
+						+e.info
+							+e.title ROLEX
+							+e.desc Rolex Lady Datejust
+								br
+								| Yellow Gold 179178 mdp
+							+e.price 44 000 $
+							+e.currency 431 613 ₽ · 5 473 €
+				+e.nav.js-product-nav.owl-nav
+			+e.progress.owl-progress.js-product-bar
+				+b.owl-progress-bar

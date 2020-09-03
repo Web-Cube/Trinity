@@ -1,0 +1,26 @@
+.checkbox {
+	display: inline-flex;
+	cursor: pointer;
+	&__input {
+		display: none;
+		&:checked + .checkbox__icon {
+			.icon {
+				opacity: 1;
+				transform: scale(1);
+			}
+		}
+	}
+	&__icon {
+		width: 16rem;
+		height: 16rem;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid #D0D7E0;
+		margin-right: 10rem;
+		.icon {
+			transform: scale(.5);
+			opacity: 0;
+		}
+	}
+}

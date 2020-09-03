@@ -1,5 +1,9 @@
 .latest-products {
 	margin-top: 130rem;
+	&_page {
+		margin-top: 85rem;
+		padding-bottom: 85rem;
+	}
 	&__title {
 		margin-bottom: 50rem;
 	}
