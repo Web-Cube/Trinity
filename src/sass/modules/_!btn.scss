@@ -43,9 +43,25 @@
 			}
 		}
 	}
+	&_filter {
+		width: 100%;
+		font-weight: 600;
+	}
+	&__icon {
+		margin-right: 20rem;
+		.icon-filter {
+			width: 15rem;
+			height: 15rem;
+			fill: none;
+			stroke-width: 1;
+		}
+	}
 	&_border {
 		color: $black;
 		border: 1px solid $black;
+		.icon-filter {
+			stroke: $black;
+		}
 		&:before {
 			content: '';
 			position: absolute;
@@ -64,6 +80,9 @@
 			&:before {
 				transform: scale(1);
 				opacity: 1;
+			}
+			.icon-filter {
+				stroke: #fff;
 			}
 		}
 	}

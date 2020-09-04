@@ -27,6 +27,18 @@
 		margin-top: 90rem;
 	}
 	
+	&__btn-mobile {
+		display: none;
+	}
+	
+	@include max-screen($small_tablet) {
+		&__column {
+			&_left {
+				width: 270/1170*100%;
+			}
+		}
+	}
+	
 	@include max-screen($large_mobile) {
 		&__column {
 			&_left {
@@ -36,6 +48,12 @@
 				width: 100%;
 				margin-top: 35rem;
 			}
+		}
+		&__btn-mobile {
+			display: block;
+		}
+		&__filter {
+			display: none;
 		}
 	}
 }
@@ -49,6 +67,20 @@
 				transform: rotate(180deg);
 			}
 		}
+	}
+	&__headline {
+		text-transform: uppercase;
+		font-weight: 600;
+		padding-top: 7rem;
+		padding-bottom: 5rem;
+	}
+	&__close {
+		width: 20px;
+		height: 20px;
+		stroke: #000;
+		margin-right: -3px;
+		display: none;
+		cursor: pointer;
 	}
 	&__list {
 		padding: 0 15rem 25rem 23rem;
@@ -86,6 +118,12 @@
 		}
 		&__head {
 			padding: 20rem;
+		}
+	}
+	
+	@include max-screen($large_mobile) {
+		&__close {
+			display: block;
 		}
 	}
 }

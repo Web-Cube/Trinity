@@ -15,7 +15,14 @@ block content
 		+e.wrap.wrap
 			+e.row.flex._justify
 				+e.column._left
-					+e.filer.filter__
+					+e.btn-mobile.js-show-filter
+						+btn("#",'filter')(class="_border _filter") Показать фильтры
+					+e.filter.filter__.js-filter
+						+e.item
+							+e.head
+								+e.H3.headline.h3 Фильтр товаров
+								+e.close.js-close-filter
+									+icon('close')
 						+e.item
 							+e.head
 								+e.H3.title КОМУ
