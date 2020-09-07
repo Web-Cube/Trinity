@@ -15,7 +15,7 @@ var defaults = {
 			return false;
 		});
 		
-		$(document).on('click', '.js-info', function(){
+		/*$(document).on('click', '.js-info', function(){
 			
 			var position = $(this).attr('href');
 
@@ -27,6 +27,24 @@ var defaults = {
 
 			return false;
 			
+		});*/
+		
+	},
+	
+	tabs: () => {
+		
+		$(document).on('click', '.js-tab', function(){
+			
+			var tabId = $(this).attr('href');
+
+			$('.js-tab.is-active').removeClass('is-active');
+			$(this).addClass('is-active');
+
+			$('.js-tab-item:visible').hide();
+			$('.js-tab-item'+tabId).fadeIn(500);
+
+			return false;
+			
 		});
 		
 	},
@@ -35,6 +53,7 @@ var defaults = {
 	init: () => {
 		
 		defaults.events();
+		defaults.tabs();
 
 	}
 }

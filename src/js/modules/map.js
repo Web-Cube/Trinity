@@ -58,29 +58,10 @@ var map = {
 			},1000);
 		});	
 	},
-	
-	tabs: () => {
-		
-		$(document).on('click', '.js-address', function(){
-			
-			var position = $(this).attr('href');
-
-			$('.js-address.is-active').removeClass('is-active');
-			$(this).addClass('is-active');
-
-			$('.js-tab:visible').hide();
-			$('.js-tab'+position).fadeIn(500);
-
-			return false;
-			
-		});
-		
-	},
 
 	init: () => {
 		
 		map.load();
-		map.tabs();
 		
 	}
 }

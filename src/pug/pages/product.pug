@@ -88,10 +88,10 @@ block content
 						+e.icon
 							+icon('arrow')
 			+e.nav.flex
-				+e.A.nav-link.is-active.js-info(href="#characteristic") Характеристики
-				+e.A.nav-link.js-info(href="#delivery") Оплата и доставка
+				+e.A.nav-link.is-active.js-tab(href="#characteristic") Характеристики
+				+e.A.nav-link.js-tab(href="#delivery") Оплата и доставка
 			+e.tabs
-				+e.tab.js-tab-content#characteristic
+				+e.tab.js-tab-item#characteristic
 					+e.tab-row.flex._justify
 						+e.tab-column
 							+e.table
@@ -139,7 +139,7 @@ block content
 								+e.table-item
 									+e.table-text._left Состояние
 									+e.table-text._right абсолютно новые
-				+e.tab.js-tab-content#delivery
+				+e.tab.js-tab-item#delivery
 					+e.tab-row.flex._justify
 						+e.tab-column
 							+e.table
