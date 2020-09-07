@@ -85,6 +85,9 @@
 	&__list {
 		padding: 0 15rem 25rem 23rem;
 		display: none;
+		&_visible {
+			display: block!important;
+		}
 	}
 	&__checkbox{
 		width: 100%;
@@ -122,8 +125,16 @@
 	}
 	
 	@include max-screen($large_mobile) {
+		&_brands {
+			margin-top: 10px;
+		}
 		&__close {
 			display: block;
+		}
+		&__item {
+			&_hidden {
+				display: none;
+			}
 		}
 	}
 }

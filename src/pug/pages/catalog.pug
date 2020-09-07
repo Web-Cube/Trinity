@@ -96,7 +96,7 @@ block content
 									+e.icon
 										+icon('check')
 									+e.text.p13 Тюнинг
-						+e.item
+						+e.item._hidden
 							+e.head
 								+e.H3.title БРЕНД
 								+e.arrow
@@ -272,6 +272,45 @@ block content
 									+e.icon
 										+icon('check')
 									+e.text.p13 Остальное
+					+e.btn-mobile.js-show-brands
+						+btn("#",'volume')(class="_border _volume") Показать бренды
+					+e.filter.filter__._brands.js-brands
+						+e.item
+							+e.head
+								+e.H3.headline.h3 Бренды
+								+e.close.js-close-brands
+									+icon('close')
+							+e.list._visible
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Grand комплектация")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Grand комплектация
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Limited Edition")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Limited Edition
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Special Edition")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Special Edition
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Акция")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Акция
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Новинка")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Новинка
+								+e.LABEL.checkbox.checkbox__
+									+e.INPUT.input(type="checkbox" name="name[]", value="Тюнинг")
+									+e.icon
+										+icon('check')
+									+e.text.p13 Тюнинг
 				+e.column._right
 					+e.H1.title.h1 Швейцарские часы
 					+e.sort.sort__

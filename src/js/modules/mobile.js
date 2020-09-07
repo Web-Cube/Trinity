@@ -28,6 +28,16 @@ var mobile = {
 			$('.js-show-filter').fadeIn(300);
 		});
 		
+		$('.js-show-brands').click(function(){
+			$(this).fadeOut(300);
+			$('.js-brands').slideDown(300);
+		});
+		
+		$('.js-close-brands').click(function(){
+			$('.js-brands').slideUp(300);
+			$('.js-show-brands').fadeIn(300);
+		});
+		
 	},
 
 	init: () => {

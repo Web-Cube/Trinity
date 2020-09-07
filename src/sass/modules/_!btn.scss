@@ -47,6 +47,11 @@
 		width: 100%;
 		font-weight: 600;
 	}
+	&_volume {
+		width: 100%;
+		font-weight: 600;
+		margin-top: 10px;
+	}
 	&__icon {
 		margin-right: 20rem;
 		.icon-filter {
@@ -54,6 +59,12 @@
 			height: 15rem;
 			fill: none;
 			stroke-width: 1;
+		}
+		.icon-volume {
+			width: 15rem;
+			height: 20rem;
+			fill: #000;
+			transform: rotate(-90deg) translateX(2rem);
 		}
 	}
 	&_border {
@@ -83,6 +94,9 @@
 			}
 			.icon-filter {
 				stroke: #fff;
+			}
+			.icon-volume {
+				fill: #fff;
 			}
 		}
 	}
