@@ -15,13 +15,13 @@ block content
 		+e.wrap.wrap
 			+e.row.flex._justify
 				+e.column._left
-					+e.btn-mobile.js-show-filter
+					+e.btn-mobile#showFilter.js-show-filter(data-filter="#filter")
 						+btn("#",'filter')(class="_border _filter") Показать фильтры
-					+e.filter.filter__.js-filter
+					+e.filter.filter__#filter.js-filter
 						+e.item
 							+e.head
 								+e.H3.headline.h3 Фильтр товаров
-								+e.close.js-close-filter
+								+e.close.js-close-filter(data-close-filter="#showFilter")
 									+icon('close')
 						+e.item
 							+e.head
@@ -272,13 +272,13 @@ block content
 									+e.icon
 										+icon('check')
 									+e.text.p13 Остальное
-					+e.btn-mobile.js-show-brands
+					+e.btn-mobile#showBrands.js-show-filter(data-filter="#brands")
 						+btn("#",'volume')(class="_border _volume") Показать бренды
-					+e.filter.filter__._brands.js-brands
+					+e.filter.filter__._brands#brands.js-filter
 						+e.item
 							+e.head
 								+e.H3.headline.h3 Бренды
-								+e.close.js-close-brands
+								+e.close.js-close-filter(data-close-filter="#showBrands")
 									+icon('close')
 							+e.list._visible
 								+e.LABEL.checkbox.checkbox__

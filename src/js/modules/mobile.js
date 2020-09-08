@@ -16,34 +16,33 @@ var mobile = {
 		
 	},
 	
-	toggleFilter: () => {
+	showFilter: (e) => {
 		
-		$('.js-show-filter').click(function(){
-			$(this).fadeOut(300);
-			$('.js-filter').slideDown(300);
-		});
+		let filterName = $(e.currentTarget).data('filter');
 		
-		$('.js-close-filter').click(function(){
-			$('.js-filter').slideUp(300);
-			$('.js-show-filter').fadeIn(300);
-		});
+		$(e.currentTarget).fadeOut(300);
+		$(filterName).slideDown(300);
 		
-		$('.js-show-brands').click(function(){
-			$(this).fadeOut(300);
-			$('.js-brands').slideDown(300);
-		});
+		return false;
 		
-		$('.js-close-brands').click(function(){
-			$('.js-brands').slideUp(300);
-			$('.js-show-brands').fadeIn(300);
-		});
+	},
+	
+	closeFilter: (e) => {
+		
+		let closeName = $(e.currentTarget).data('close-filter');
+		
+		$(e.currentTarget).closest('.js-filter').slideUp(300);
+		$(closeName).fadeIn(300);
+		
+		return false;
 		
 	},
 
 	init: () => {
 		
 		mobile.header();
-		mobile.toggleFilter();
+		$(document).on('click', '.js-show-filter', mobile.showFilter);
+		$(document).on('click', '.js-close-filter', mobile.closeFilter);
 		
 	}
 }
