@@ -59,6 +59,9 @@
 }
 
 .filter {
+	&_brands {
+		display: none;
+	}
 	&__item {
 		border: 1px solid #D0D7E0;
 		margin-bottom: -1px;

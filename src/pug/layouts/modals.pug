@@ -16,7 +16,7 @@
 						| 656 659 ₽
 						br
 						| 8 363 €
-			+e.FORM.form.form__(action='/app/mail')
+			+e.FORM.form.form__(action='/app/mail', data-thank="#thank")
 				+e.H3.title.h2.title Заявка на товар
 				+e.fields
 					+e.field
@@ -29,6 +29,11 @@
 					a(href="#") согласие на обработку 
 					| своих персональных данных и соглашаетесь с 
 					a(href="#") политикой конфиденциальности
++b.modals._thank.mfp-hide#thank
+	+b.thank
+		+e.H3.title.h2.title Ваша заявка отправлена!
+		+e.desc.p
+			| Наш менеджер свяжется с Вами в ближайшее время.
 +b.brends.modals.modals_brend.mfp-hide#brands
 	+e.body
 		+e.H2.title.h2.css-text-center Список выкупаемых брендов

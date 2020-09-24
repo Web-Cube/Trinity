@@ -40,6 +40,17 @@
 		margin-bottom: 30rem;
 	}
 	
+	&_thank {
+		max-width: 400rem;
+		padding: 60rem 30rem;
+		margin: auto;
+		background: #FBFBFB;
+		.modals__close {
+			right: 20rem;
+			top: 20rem;
+		}
+	}
+	
 	@include max-screen($large_mobile) {
 		&_buy {
 			padding-left: 40px 20px;
@@ -48,6 +59,12 @@
 			right: 20rem;
 			top: 20rem;
 		}
+	}
+}
+
+.thank {
+	&__title {
+		margin-bottom: 10px;
 	}
 }
 

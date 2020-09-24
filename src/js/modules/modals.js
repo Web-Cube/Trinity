@@ -69,31 +69,6 @@ var modals = {
 		$(document).on('click', '.js-close-modal', modals.close);
 
 		$(document).on('click', '.js-modal', modals.open);
-		
-		/*$(window).on('load', function() {
-			
-			$.magnificPopup.open({
-				tClose: 'Закрыть',
-				removalDelay: 600,
-				fixedContentPos: true,
-				fixedBgPos: true,
-				overflowY: 'hidden',			
-				closeMarkup: '<div class="modals__close close js-close-modal"><svg class="icon icon-close" viewBox="0 0 17 17"><use xlink:href="/app/icons/sprite.svg#close"></use></svg></div>',
-				mainClass: 'css-modal-animate',				
-				items: {
-					src: '#brands',
-					type: 'inline'
-				},
-				callbacks: {
-					beforeOpen: () => {
-					},
-
-					beforeClose: () => {
-					}
-				}
-			}, 0);
-			
-		});*/
 
 	}
 
